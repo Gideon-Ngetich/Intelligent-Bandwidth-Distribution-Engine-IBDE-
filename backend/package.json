@@ -2,30 +2,29 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "license": "ISC",
-  "author": "Gideon Ngetich",
-  "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.ts",
-    "start": "node index.ts"
+    "test": "jest",
+    "dev": "nodemon index.js",
+    "node": "node index.js"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
   "dependencies": {
-    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.3",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
+    "jest": "^30.2.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.19.0",
+    "mikronode": "^2.3.11",
+    "mongoose": "^8.19.3",
+    "node-cron": "^4.2.1",
     "nodemon": "^3.1.10",
-    "routeros-node": "^0.1.0"
-  },
-  "devDependencies": {
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.4",
-    "@types/node": "^24.9.1",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
+    "routeros-node": "^0.1.0",
+    "socket.io": "^4.8.1",
+    "winston": "^3.18.3"
   }
 }
